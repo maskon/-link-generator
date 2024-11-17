@@ -14,15 +14,6 @@ body {
     padding: 20px 15px;
 }
 
-@media (max-width: 720px) {
-    .wrapper {
-        padding: 0 5px;
-    }
-    .btn {
-        width: 100℅;
-    }
-}
-
 h1 {
     color: #003d9d;
 }
@@ -65,4 +56,13 @@ input[type=text] {
     border-radius: 8px;
     padding: 10px 10px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 720px) {
+    .wrapper {
+        padding: 0 5px;
+    }
+    .btn {
+        width: 100℅;
+    }
 }

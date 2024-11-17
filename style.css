@@ -18,6 +18,9 @@ body {
     .wrapper {
         padding: 0 5px;
     }
+    .btn {
+        width: 100℅;
+    }
 }
 
 h1 {

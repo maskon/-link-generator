@@ -11,17 +11,16 @@
 </head>
 <body>
     <div class="wrapper">
-        <h1>Преобразователь ссылок</h1>
+        <h1>Генаратор ссылок с Google Drive</h1>
         <div class="input-block">
             <div id="quantity">Вставьте ссылки в поле ниже:</div>
             <input id="input" type="text" placeholder="Вставьте ссылки">
-            <button class="btn" id="btn">Получить ссылки</button>
+            <button class="btn" id="btn" disabled>Получить ссылки</button>
         </div>
         <div class="textarea-block">
             <div>Ваши ссылки на скачивание с Google Drive:</div>
             <textarea id="result"></textarea>
-            <button class="btn" id="btn-copy">Скопировать в буфер</button>
-            <p class="completed" id="completed">Ссылки успешно скопированы!</p>
+            <button class="btn" id="btn-copy" disabled>Скопировать в буфер</button>
         </div>
     </div>
     <script src="app.js"></script>

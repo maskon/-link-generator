@@ -49,6 +49,11 @@ input[type=text] {
     background-color: #0309c2;
 }
 
+.btn:disabled, .btn:hover:disabled {
+    background-color: rgba(112, 134, 233, 0.4);
+    cursor: not-allowed;
+}
+
 .textarea-block textarea {
     max-width: 480px;
     width: 100%;

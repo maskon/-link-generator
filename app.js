@@ -16,7 +16,7 @@ btn.addEventListener('click', () => {
     const formattedArray = array.map(item => {
         return item
             .replace(/file\/d\//g, 'uc?export=download&id=')
-            .replace(/\/view\?usp=drive_link|\/view\?usp=sharing/, '')
+            .replace(/\/view\?usp=drive_link|\/view\?usp=sharing|\/view\?usp=drivesdk/, '')
     })
 
     result.textContent = formattedArray.join(', ')

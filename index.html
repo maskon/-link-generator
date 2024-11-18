@@ -13,18 +13,15 @@
     <div class="wrapper">
         <h1>Преобразователь ссылок</h1>
         <div class="input-block">
-            <div>Вставьте ссылки в поле ниже:</div>
+            <div id="quantity">Вставьте ссылки в поле ниже:</div>
             <input id="input" type="text" placeholder="Вставьте ссылки">
-            <div>
-                <button class="btn" id="btn">Получить ссылки</button>
-            </div>
+            <button class="btn" id="btn">Получить ссылки</button>
         </div>
         <div class="textarea-block">
             <div>Ваши ссылки на скачивание с Google Drive:</div>
             <textarea id="result"></textarea>
-            <div>
-                <button class="btn" id="btn-copy">Скопировать в буфер</button>
-            </div>
+            <button class="btn" id="btn-copy">Скопировать в буфер</button>
+            <p class="completed" id="completed">Ссылки успешно скопированы!</p>
         </div>
     </div>
     <script src="app.js"></script>

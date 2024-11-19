@@ -64,11 +64,6 @@ input[type=text] {
     margin-bottom: 10px;
 }
 
-.completed {
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-}
-
 @media (max-width: 720px) {
     .wrapper {
         padding: 0 5px;

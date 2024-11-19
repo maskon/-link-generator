@@ -8,7 +8,14 @@ let dataString = ''
 
 input.addEventListener('input', () => {
     input.value ? btn.disabled = false : btn.disabled = true
-    dataString = input.value
+
+    if(input.value.includes('&usp=drive_copy')) {
+        dataString = input.value.split(/&usp=drive_copy/)
+        dataString.pop()
+        dataString = String(dataString)
+    } else {
+        dataString = input.value
+    }  
 })
 
 btn.addEventListener('click', () => {
@@ -19,7 +26,7 @@ btn.addEventListener('click', () => {
 
     const formattedArray = array.map(item => {
         return item
-            .replace(/file\/d\//g, 'uc?export=download&id=')
+            .replace(/file\/d\/|open\?id=/g, 'uc?export=download&id=')
             .replace(/\/view\?usp=drive_link|\/view\?usp=sharing|\/view\?usp=drivesdk/, '')
     })
 

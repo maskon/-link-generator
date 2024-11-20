@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
     font-family: "Inter", serif;
     background-color: #ddebe5;
+    color: rgb(11, 11, 12);
 }
 
 .wrapper {

@@ -7,7 +7,18 @@ const quantity = document.getElementById('quantity')
 let dataString = ''
 
 input.addEventListener('input', () => {
-    input.value ? btn.disabled = false : btn.disabled = true
+    if(input.value.includes('https://drive.google.com')) {
+        btn.disabled = false
+    } else {
+        if(!input.value) {
+            quantity.textContent = 'Вставьте ссылки в поле ниже:'
+            quantity.style.color = 'rgb(11, 11, 12)'
+        } else {
+            btn.disabled = true
+            quantity.textContent = 'Вставьте ссылку с Google Drive'
+            quantity.style.color = 'red'
+        }
+    }
 
     if(input.value.includes('&usp=drive_copy')) {
         dataString = input.value.split(/&usp=drive_copy/)

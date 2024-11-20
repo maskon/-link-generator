@@ -9,6 +9,7 @@ let dataString = ''
 input.addEventListener('input', () => {
     if(input.value.includes('https://drive.google.com')) {
         btn.disabled = false
+        quantity.textContent = ' Вставьте ссылку в поле ниже:'
         quantity.style.color = 'rgb(11, 11, 12)'
     } else {
         if(!input.value) {

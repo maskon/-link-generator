@@ -16,7 +16,7 @@ input.addEventListener('input', () => {
             quantity.style.color = 'rgb(11, 11, 12)'
         } else {
             btn.disabled = true
-            quantity.textContent = `Ссылка должна содержать "https://drive.google.com"`
+            quantity.textContent = `Ссылка должна содержать: "https://drive.google.com"`
             quantity.style.color = 'red'
         }
     }
